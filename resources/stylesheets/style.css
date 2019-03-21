@@ -1,7 +1,44 @@
 /* General */
 
+/*
+
+Box-1:
+Vertical-32px
+Left-24px
+
+Box-2:
+Vertical-32px
+Left-72px
+
+*/
+
+
 html {
   font-size:16px;
+  font-family:Arial;
+  color:#3B3B3B;
+}
+
+main {
+  position:relative;
+  top:4rem;
+}
+
+.box-1 {
+  padding:2rem 0 2rem 1.5rem;
+}
+
+.box-2 {
+  padding:2rem 0 2rem 4.5rem;
+}
+
+h2 {
+  font-size:3rem;
+  font-weight:bold;
+}
+
+h3 {
+  font-size:2rem;
 }
 
 /* Header */
@@ -12,8 +49,11 @@ header {
   align-items:center;
   justify-content:space-between;
   padding:0 1.5rem;
-
-  background-color:lightgray;
+  z-index:1;
+  position:fixed;
+  width:96.632%;
+  background-color:white;
+  font-size:1.25rem;
 }
 
 header div {
@@ -24,3 +64,35 @@ header div {
 header .head-right span {
   margin-left:1rem;
 }
+
+/* 1st Section */
+
+.section1 {
+  background-color:lightgray;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.section1 img {
+  margin-right:1.5rem;
+}
+
+.section1 .text-box {
+  display:flex;
+  flex-flow: wrap column;
+  align-items:flex-start;
+  justify-content:space-between;
+  height:20rem;
+  width:25rem;
+}
+
+.section1 .text-box span {
+  background-color:#3B3B3B;
+  color:White;
+  width:100%;
+  text-align:center;
+  padding:0.5rem 0;
+}
+
+/* 2nd Section */
