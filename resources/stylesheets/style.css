@@ -73,6 +73,34 @@ header .head-right span {
   margin-left:1rem;
 }
 
+header .head-mobile {
+  display:none;
+}
+
+@media only screen and (max-width:685px) {
+  header span,
+    .head-desktop {
+    display:none;
+  }
+  header {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:4rem;
+    padding:0;
+  }
+  header .head-left img {
+    display:none;
+  }
+  header .head-mobile {
+    display:inline;
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+  }
+
+}
+
 /* 1st Section */
 
 .section1 {
@@ -80,10 +108,12 @@ header .head-right span {
   display:flex;
   align-items:center;
   justify-content:flex-start;
+  width:98.36%;
 }
 
 .section1 img {
   margin-right:1.5rem;
+  width:60%;
 }
 
 .section1 .text-box {
@@ -95,13 +125,24 @@ header .head-right span {
   width:25rem;
 }
 
-.section1 .text-box span {
+.section1 .text-box .button {
   background-color:#3B3B3B;
   color:White;
   width:100%;
   text-align:center;
   padding:0.5rem 0;
 }
+
+@media only screen and (max-width:812px) {
+  .section1 .text-box .button {
+    display:none;
+  }
+}
+
+@media only screen and (max-width:685px) {
+
+}
+
 
 /* 2nd Section */
 
@@ -121,10 +162,6 @@ header .head-right span {
   margin:2rem 0 1.5rem 0;
 }
 
-.section2 .section2-left .bold {
-  color:green;
-}
-
 /* right */
 
 .section2 .section2-right {
@@ -135,7 +172,7 @@ header .head-right span {
   width:40%;
   margin-right:1.5rem;
   height:38rem;
-  border-left:1px solid black;
+  border-left:1px solid gray;
 }
 
 .section2 .section2-right .section2-rightbox {
@@ -156,6 +193,11 @@ header .head-right span {
   justify-content:center;
   align-items:flex-start;
 }
+
+.section2 .section2-right .special {
+  background-color:lightgray;
+}
+
 
 .section2 .section2-right .section2-rightbox .section2-rightbox-text span {
   margin-top:0.5rem;
@@ -289,7 +331,7 @@ header .head-right span {
   .section4 .section4-container .section4-container-right .section4-right-box img {
     padding:1rem;
     width:35%;
-    height:auto;
+    height:10rem;
   }
 
   .section4 .section4-container .section4-container-right .section4-right-box .text {
