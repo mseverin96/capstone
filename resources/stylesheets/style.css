@@ -88,6 +88,7 @@ header .head-mobile {
     align-items:center;
     height:4rem;
     padding:0;
+    width:100%;
   }
   header .head-left img {
     display:none;
@@ -140,7 +141,31 @@ header .head-mobile {
 }
 
 @media only screen and (max-width:685px) {
-
+  .section1 {
+    flex-direction:column;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  .section1 img {
+    margin:0;
+    width:100%;
+  }
+  .section1 .text-box {
+    width:100%;
+    background-color:red;
+  }
+  .section1 h2 {
+    margin:2rem 0 2rem 1rem;
+  }
+  .section1 h3 {
+    margin-left:1rem;
+  }
+  .section1 .text-box .button {
+    display:block;
+    margin:1.5rem 0 2rem 1rem;
+    width:40.6rem;
+  }
 }
 
 
