@@ -173,9 +173,58 @@ header .head-right span {
 /* 3rd Section */
 
 .section3 {
-
+  background-color:lightgray;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .section3 h2 {
   margin-bottom:2rem;
 }
+
+.section3 .section3-container {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:space-between;
+  flex-wrap:wrap;
+}
+
+.section3 .section3-container .box {
+  display:inline-flex;
+  flex-direction:column;
+  padding-bottom:1.5rem;
+  justify-content:flex-start;
+  align-items:flex-start;
+  background-color:white;
+  width:31.68%;
+}
+
+.section3 .section3-container .box img {
+  padding-bottom:1rem;
+  height:auto;
+  width:100%;
+}
+
+.section3 .section3-container .box .courses {
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+
+.section3 .section3-container .box h3,
+  .section3 .section3-container .box span {
+    padding-left:1rem;
+}
+
+.section3 .section3-container .top {
+  margin-bottom:2rem;
+}
+
+.section3 .section3-container .middle {
+  margin-left:2rem;
+  margin-right:2rem;
+}
+
+/* 4th Section */
