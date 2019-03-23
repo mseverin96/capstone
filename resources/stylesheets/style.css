@@ -303,3 +303,20 @@ header .head-right span {
   .section4 .section4-container .section4-container-right .section4-right-box .text h3 {
     margin-bottom:0.5rem;
   }
+
+/* Footer */
+
+footer {
+  padding:1rem 1.5rem 0 1.5rem;
+  display:flex;
+  justify-content:space-between;
+  font-weight:bold;
+  position:relative;
+  top:4rem;
+  height:4rem;
+  border-top:1px solid gray;
+}
+
+footer .footer-right span {
+  padding-left:1rem;
+}
