@@ -153,7 +153,6 @@ header .head-mobile {
   }
   .section1 .text-box {
     width:100%;
-    background-color:red;
   }
   .section1 h2 {
     margin:2rem 0 2rem 1rem;
@@ -187,6 +186,11 @@ header .head-mobile {
   margin:2rem 0 1.5rem 0;
 }
 
+@media only screen and (max-width:685px) {
+  .section2 {
+    display:none;
+  }
+}
 /* right */
 
 .section2 .section2-right {
@@ -236,6 +240,36 @@ header .head-mobile {
   padding:1rem 0 1rem 1rem;
 }
 
+/* Mobile Size 2nd Section */
+
+.sec2mobile {
+  padding:1rem 1rem 0 1rem;
+}
+
+.sec2mobile .sec2mobile-box {
+  display:flex;
+  flex-direction:column;
+  padding-bottom:4rem;
+}
+
+.sec2mobile .sec2mobile-box img {
+  padding-bottom:1rem;
+}
+
+.sec2mobile .sec2mobile-box .mobile-mid {
+  padding:1rem 0;
+}
+
+.sec2mobile .sec2mobile-box .mobile-last {
+  padding-bottom:2rem;
+}
+
+
+@media only screen and (min-width:686px) {
+  .sec2mobile {
+    display:none;
+    }
+  }
 
 /* 3rd Section */
 
@@ -292,6 +326,35 @@ header .head-mobile {
 .section3 .section3-container .middle {
   margin-left:2rem;
   margin-right:2rem;
+}
+
+/* mobile section 3 */
+
+.sec3mobile {
+  padding:2rem 1rem;
+}
+
+.sec3mobile h2 {
+  padding-bottom:1rem;
+  text-align:center;
+}
+
+.sec3mobile h3 {
+  background-color:lightgray;
+  padding:1rem 0 1.5rem 1rem;
+  margin-bottom:0.5rem;
+}
+
+@media only screen and (max-width:685px) {
+  .section3 {
+    display:none;
+  }
+}
+
+@media only screen and (min-width:686px) {
+  .sec3mobile {
+    display:none;
+  }
 }
 
 /* 4th Section */
@@ -371,6 +434,33 @@ header .head-mobile {
     margin-bottom:0.5rem;
   }
 
+/* mobile 4th section */
+
+.sec4mobile {
+  padding:2rem 0 1.5rem 0;
+}
+
+.sec4mobile h2 {
+  padding-bottom:1rem;
+  text-align:center;
+}
+
+.sec4mobile video {
+  width:100%;
+}
+
+@media only screen and (max-width:685px) {
+  .section4 {
+    display:none;
+  }
+}
+
+@media only screen and (min-width:686px) {
+  .sec4mobile {
+    display:none;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -386,4 +476,16 @@ footer {
 
 footer .footer-right span {
   padding-left:1rem;
+}
+
+@media only screen and (max-width:685px) {
+  footer {
+    margin:0;
+    padding:1rem 0 1rem 1rem;
+    height:auto;
+    border:none;
+  }
+  footer .footer-right {
+    display:none;
+  }
 }
