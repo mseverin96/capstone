@@ -60,8 +60,9 @@ header {
   z-index:1;
   position:fixed;
   width:96.632%;
-  background-color:white;
+  background-color:lightblue;
   font-size:1.25rem;
+  border-bottom:1px solid black;
 }
 
 header div {
@@ -71,6 +72,11 @@ header div {
 
 header .head-right span {
   margin-left:1rem;
+}
+
+header .head-right span:hover{
+  font-weight:bold;
+  text-decoration:underline;
 }
 
 header .head-mobile {
@@ -132,6 +138,13 @@ header .head-mobile {
   width:100%;
   text-align:center;
   padding:0.5rem 0;
+}
+
+.section1 .text-box .button:hover {
+  background-color:lightblue;
+  color:#3B3B3B;
+  font-weight:bold;
+  border:1px solid #3B3B3B;
 }
 
 @media only screen and (max-width:812px) {
@@ -230,6 +243,10 @@ header .head-mobile {
 
 .section2 .section2-right .section2-rightbox .section2-rightbox-text span {
   margin-top:0.5rem;
+}
+
+.section2 .section2-right .section2-rightbox .section2-rightbox-text .read:hover {
+  text-decoration:underline;
 }
 
 .section2 .section2-right .type1 {
@@ -472,10 +489,16 @@ footer {
   top:4rem;
   height:4rem;
   border-top:1px solid gray;
+  background-color:lightblue;
 }
 
 footer .footer-right span {
   padding-left:1rem;
+}
+
+footer .footer-right span:hover{
+font-weight:bold;
+text-decoration:underline;
 }
 
 @media only screen and (max-width:685px) {
